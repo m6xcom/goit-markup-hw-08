@@ -1,0 +1,41 @@
+.hero{
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(../images/header-img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &-title{
+        margin: 0 auto;
+        padding:0;
+        width: 696px;
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+
+    &-button{
+        margin: 30px auto 0px;
+        width: 200px;
+        height: 50px;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 1.87;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        letter-spacing: 0.06em;
+        color: #FFFFFF;
+        background: $accent-color;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}

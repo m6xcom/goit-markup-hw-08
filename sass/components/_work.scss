@@ -1,0 +1,29 @@
+.work-list{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.work-list-item{
+    position: relative;
+    display: block;
+    width: 370px;
+
+    p{
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        z-index: 5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70px;
+        width: 370px;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        background: rgba(47, 48, 58, 0.8);
+    }
+}
