@@ -1,8 +1,10 @@
 @import "../utils/variables";
+@import "../utils/mixin";
 @import "../utils/normalize";
 @import "../utils/fonts";
 @import "./common";
 @import "./header";
+@import "./mobile-menu";
 @import "./filters";
 @import "./products";
 @import "./footer";
