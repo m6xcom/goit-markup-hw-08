@@ -13,6 +13,10 @@ footer{
         display: flex;
         flex-wrap: wrap;
     }
+
+    @media screen  and (min-width:769px) and (max-width:1199px){
+        justify-content: center;
+    }
 }
 .footer-logo{
     margin-left: auto;
@@ -34,6 +38,10 @@ footer{
         margin-left: 100px;
     }
 
+    @media screen  and (min-width:769px) and (max-width:1199px){
+        margin-left: 30px;
+    }
+
     &>span{
         color: $accent-color;
     }
@@ -49,6 +57,10 @@ footer{
 
     @include tablet{
         margin-left: 61px;
+    }
+
+    @media screen  and (min-width:769px) and (max-width:1199px){
+        margin-left: 0px;
     }
 
     &>li:not(:first-child){
@@ -160,6 +172,10 @@ footer{
         margin-left: 150px;
     }
 
+    @media screen  and (min-width:769px) and (max-width:1199px){
+        margin-left: 0px;
+    }
+
     &>form>label{
         display: flex;
         flex-direction: column;
@@ -228,3 +244,4 @@ footer{
         right: 28px;
     }
 }
+

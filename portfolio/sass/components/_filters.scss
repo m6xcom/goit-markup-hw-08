@@ -9,6 +9,10 @@
     @include tablet{
         justify-content: center;
     }
+
+    @media screen  and (min-width:642px) and (max-width:767px){
+        justify-content: center;
+    }
 }
 .filters-list-item{
     margin-left: 8px;
@@ -35,11 +39,9 @@
         @include desktop{
             margin-left: 8px;
         }
-    }
 
-    &:last-child{
-        @media screen and (max-width: 380px) {
-            margin-left: 0px;
+        @media screen and (min-width:497px) and (max-width:1199px) {
+            margin-left: 8px;
         }
     }
 
@@ -53,6 +55,26 @@
         @include tablet{
             margin-top: 0px;
         }
+
+        @media screen and (min-width:497px) and (max-width:767px) {
+            margin-top: 0px;
+        }
+    }
+    &:last-child{
+        @media screen and (max-width: 380px) {
+            margin-left: 0px;
+        }
+
+        @media screen and (min-width:497px) and (max-width:767px) {
+            margin-top: 15px;
+            margin-left: 0px;
+        }
+
+        @media screen and (min-width:642px) and (max-width:767px) {
+            margin-top: 0px;
+            margin-left: 8px;
+        }
+        
     }
 
 

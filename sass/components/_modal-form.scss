@@ -95,6 +95,12 @@
             font-size: 14px;
         }
 
+        @media screen and (max-width: 450px){
+            text-align: center;
+            display: inline;
+            vertical-align: middle;
+        }
+
         &:hover{
             cursor: pointer;
         }
@@ -123,10 +129,12 @@
     background-repeat: no-repeat;
     background-size: contain;
     transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .agreement>label>input:checked + .agreement-icon{
     background:$accent-color url(../images/checkedbox.svg);
     background-size: contain;
+    background-repeat: no-repeat;
 }
 .agreement-submit{
     font-weight: bold;
