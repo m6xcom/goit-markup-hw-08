@@ -3,6 +3,7 @@ header{
     border: 1px solid #ECECEC;
     padding-top: 16px;
     height: 60px;
+    z-index: 5;
 
     @include desktop{
         padding-top: 24px;
@@ -27,9 +28,16 @@ header{
         color: $accent-color;
     }
 }
-nav{
+.nav{
+    display: none;
+    pointer-events: none;
     margin-left: 85px;
     margin-top: 8px;
+
+    @include desktop{
+        display: block;
+        pointer-events: all;
+    }
 }
 .nav-list{
     li{
@@ -53,7 +61,7 @@ nav{
         color: $accent-color;
     }
 }
-.active-page::after{
+.nav-item.active-page::after{
     content: "";
     display: block;
     margin-top: 26px;
@@ -63,11 +71,17 @@ nav{
     border-radius: 2px;
 }
 .header-contacts-list{
-    display: flex;
-    align-items: baseline;
-    flex-direction: row;
+    display: none;
+    pointer-events: none;
     margin-left: auto;
     margin-top: 8px;
+
+    @include desktop{
+        pointer-events: all;
+        display: flex;
+        align-items: baseline;
+        flex-direction: row;
+    }
 
     li:last-child{
         margin-left: 30px;
