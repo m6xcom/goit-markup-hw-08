@@ -7,6 +7,10 @@
         pointer-events: none;
     }
 
+    @include tablet{
+        display: none;
+        pointer-events: none;
+    }
 }
 .mobile-menu-btn{
     pointer-events: all;

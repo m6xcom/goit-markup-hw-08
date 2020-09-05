@@ -7,6 +7,11 @@ footer{
     @include desktop{
         display: flex;
     }
+
+    @include tablet{
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 .footer-logo{
     margin-left: auto;
@@ -24,6 +29,10 @@ footer{
         margin-right: 0px;
     }
 
+    @include tablet{
+        margin-left: 100px;
+    }
+
     &>span{
         color: $accent-color;
     }
@@ -35,6 +44,10 @@ footer{
 
     @include desktop {
         text-align: left;
+    }
+
+    @include tablet{
+        margin-left: 61px;
     }
 
     &>li:not(:first-child){
@@ -79,6 +92,11 @@ footer{
         text-align: left;
         margin-left: 69px;
         margin-top: 12px;
+    }
+
+    @include tablet{
+        margin-top: 5px;
+        margin-left: 165px;
     }
 }
 .join-us-header{
@@ -135,6 +153,10 @@ footer{
         text-align:left;
         margin-left: 93px;
         margin-top: 12px;
+    }
+
+    @include tablet{
+        margin-left: 150px;
     }
 
     &>form>label{

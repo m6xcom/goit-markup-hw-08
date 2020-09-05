@@ -9,7 +9,9 @@
     flex-direction: column;
     
     @include tablet{
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     @include desktop {
@@ -25,12 +27,33 @@
         width: 270px;
         height: 251px;
     }
+
+    @include tablet{
+        max-width: 354px;
+        height: 251px;
+    }
+
+    &:nth-child(2n){
+        @include tablet{
+            margin-left: 30px;
+        }
+    }
     
     &:not(:first-child){
         margin-top: 30px;
 
         @include desktop {
             margin-top: 0px;
+        }
+
+        @include tablet{
+            margin-top: 0px;
+        }
+    }
+
+    &:nth-child(n+3){
+        @include tablet{
+            margin-top: 30px;
         }
     }
 
@@ -44,6 +67,10 @@
         text-align: center;
 
         @include desktop{
+            text-align: left;
+        }
+
+        @include tablet{
             text-align: left;
         }
     }

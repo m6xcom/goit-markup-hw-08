@@ -16,10 +16,18 @@
         margin-top: 50px;
     }
 
+    @include tablet{
+        justify-content: space-between;
+    }
+
     .clients-list-item:nth-child(2n){
         margin-left: 30px;
 
         @media screen and (max-width: 479px){
+            margin-left: 0px;
+        }
+
+        @media screen and (min-width:720px) and (max-width:1199px) {
             margin-left: 0px;
         }
     }
@@ -31,7 +39,15 @@
             margin-top: 0px;
         }
 
+        @media screen and (min-width:720px) and (max-width:1199px) {
+            margin-top: 0px;
+        }
         
+    }
+    .clients-list-item:nth-child(n+4){
+        @include tablet{
+            margin-top: 30px;
+        }
     }
     .clients-list-item{
         @media screen and (max-width: 479px){

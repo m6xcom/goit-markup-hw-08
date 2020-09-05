@@ -6,7 +6,9 @@
     background-repeat: no-repeat;
     background-position: center;
 
-    @media screen and (min-device-pixel-ratio: 2), (max-width:480px) {
+    @media screen and (min-device-pixel-ratio: 2) and (max-width:480px),
+    screen and (-webkit-min-device-pixel-ratio:2) and (max-width:480px),
+    screen and (-o-min-device-pixel-ratio:2/1) and (max-width:480px) {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(../images/mobile/header-img@2x.jpg);
     }
 
@@ -14,9 +16,20 @@
         padding-top: 200px;
         padding-bottom: 200px;
         background-image: linear-gradient(rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(../images/desktop/header-img@1x.jpg);
-        @media screen and (min-device-pixel-ratio:2) {
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (-webkit-min-device-pixel-ratio:2),
+        screen and (-o-min-device-pixel-ratio:2/1) {
             background-image: linear-gradient(rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(../images/desktop/header-img@2x.jpg);
         }        
+    }
+
+    @include tablet{
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(../images/tablet/header-img@1x.jpg);
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (-webkit-min-device-pixel-ratio:2),
+        screen and (-o-min-device-pixel-ratio:2/1){
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(../images/tablet/header-img@2x.jpg);
+        }
     }
 
     &-title{

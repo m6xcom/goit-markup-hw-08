@@ -8,6 +8,13 @@
         display: flex;
         justify-content: space-between;
     }
+
+    @include tablet{
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
 }
 .team-list-item{
     background: #FFFFFF;
@@ -21,11 +28,25 @@
         max-width: 270px;
     }
 
+    @include tablet{
+        max-width: 354px;
+    }
+
     &:not(:first-child){
         margin-top: 30px;
 
         @include desktop{
             margin-top: 0px;
+        }
+
+        @include tablet{
+            margin-top: 0px;
+        }
+    }
+
+    &:nth-child(n+3){
+        @include tablet{
+            margin-top: 30px;
         }
     }
 
