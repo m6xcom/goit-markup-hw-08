@@ -471,6 +471,7 @@ img {
 }
 
 header {
+  width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 1px solid #ECECEC;
@@ -1302,7 +1303,8 @@ header {
 }
 
 footer {
-  padding: 60px 0;
+  padding: 60px 0px;
+  width: 100%;
   background: #2F303A;
 }
 
